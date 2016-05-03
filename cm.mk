@@ -30,9 +30,9 @@ TARGET_SCREEN_WIDTH := 1536
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.8/bin
 KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_SOURCE := kernel/htc/flounder
-TARGET_KERNEL_CONFIG := flounder_defconfig
+TARGET_KERNEL_CONFIG := aopp_flounder_defconfig
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-BOARD_KERNEL_CMDLINE := androidboot.selinux=enforcing
+BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive
 TARGET_PREBUILT_KERNEL := false
 
 # Assert for recovery compatibility
@@ -64,7 +64,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="volantisg-user 5.1.1 LMY48T 2237560 release-keys"
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := cm_flounder_lte
+PRODUCT_NAME := aopp_flounder_lte
 PRODUCT_DEVICE := flounder_lte
 PRODUCT_BRAND := google
-PRODUCT_MODEL := Nexus 9
+PRODUCT_MODEL := Pwn Pad
