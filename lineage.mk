@@ -38,4 +38,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_NAME := aopp_flounder_lte
 PRODUCT_DEVICE := flounder_lte
 PRODUCT_BRAND := google
-PRODUCT_MODEL := Nexus 9
+PRODUCT_MODEL := Pwn Pad
